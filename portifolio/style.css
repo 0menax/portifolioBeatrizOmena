@@ -1,0 +1,137 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background);
+}
+
+/* header */
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--corHeader);
+    box-shadow: 0 5px 20px 3px var(--sombra);
+    justify-content: space-between;
+}
+
+.nome-header {
+    margin-left: 50px;
+    padding: 20px;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    color: var(--branco);
+}
+
+header ul {
+    margin-right: 80px;
+    padding: 20px;
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    margin-left: 80px;
+}
+
+.strongH {
+    font-weight: 700;
+    color: var(--strongH);
+    margin-left: 10px;
+}
+
+.btn-tema {
+    border-radius: 15px;
+    padding: 13px;
+    margin-right: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    color: var(--letrabotao);
+    background-color: var(--botao);
+    box-shadow: 0 2px 5px 1px var(--sombra);
+}
+
+/* Home */
+
+.home {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.imagemHome {
+    padding: 30px;
+    display: flex;
+    width: 500px;
+    height: auto;
+}
+
+.textoHomeAgrupado h1 {
+    color: var(--textoHome);
+    font-weight: 400;
+    font-size: 80px;
+
+}
+
+.textoHomeAgrupado h2 {
+    color: var(--textoHome);
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.textoHomeAgrupado p {
+    color: var(--textoHome2);
+    font-size: 33px;
+}
+
+
+
+.strongO {
+    font-weight: 700;
+    color: var(--strongO);
+}
+
+
+
+
+/* cores tema */
+
+:root {
+    --roxoE: #7C68FF;
+    --roxoC: #C0B7FF;
+    --preto: #000000;
+    --cinza: #1B1B1B;
+    --branco: #FFFF;
+    --branquinho: #FEFEFE;
+    --sombras: #00000051;
+    --sombrass: #c1b7ff34;
+}
+
+.tema-escuro {
+    --background: var(--cinza);
+    --corHeader: var(--preto);
+    --strongH: var(--roxoC);
+    --strongO: var(--roxoC);
+    --botao: var(--roxoC);
+    --letrabotao: var(--preto);
+    --textoHome: var(--branco);
+    --textoHome2: var(--roxoC);
+    --sombra: var(--sombrass)
+}
+
+.tema-claro {
+    --background: var(--branquinho);
+    --corHeader: var(--roxoE);
+    --strongH: var(--branco);
+    --strongO: var(--roxoE);
+    --botao: var(--branco);
+    --letrabotao: var(--roxoE);
+    --textoHome: var(--roxoE);
+    --textoHome2: var(--roxoE);
+     --sombra: var(--sombras)
+}
