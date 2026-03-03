@@ -16,7 +16,7 @@ body {
 
 /* header */
 
-header {
+.header {
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -29,6 +29,12 @@ header {
     background-color: var(--corHeader);
     box-shadow: 0 5px 20px 3px var(--sombra);
     justify-content: space-between;
+    transition: 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.header.scrolled {
+    background: var(--fundoScroll); 
+    backdrop-filter: blur(5px);
 }
 
 .nome-header {
@@ -38,6 +44,7 @@ header {
     font-weight: 300;
     font-size: 35px;
     color: var(--branco);
+   
 }
 
 header ul {
@@ -74,6 +81,7 @@ header svg {
 }
 
 .btn-tema {
+    cursor: pointer;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -83,6 +91,7 @@ header svg {
     border: 3px solid var(--detalheTemaButton);
     background-color: var(--corHeader);
     box-shadow: 0 0px 20px 4px var(--sombraButtonTema);
+    transition: 1s;
 }
 
 
@@ -90,16 +99,21 @@ header svg {
     color: var(--detalheTemaButton);
 }
 
-.btn-tema:hover {}
+.btn-tema:hover{
+    transform: scale(0.9);
+}
+
 
 /* Home */
 
 .home {
+    display: flex;
     margin-top: 20px;
     width: 100%;
     gap: 50px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .homeAgrupado {
@@ -130,12 +144,13 @@ header svg {
 
 .iconsHome ul li {
     transition: 0.5s;
+    filter: drop-shadow(1px 1px 1px var(--sombraButtonTema));
 
 }
 
 .iconsHome ul li:hover {
     transform: scale(1.08);
-    filter: drop-shadow(2px 2px 2px var(--sombraButtonTema));
+    
 }
 
 
@@ -182,6 +197,39 @@ header svg {
     text-align: center;
 }
 
+.skill2 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+ .tooltip2 {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  border: solid 1px var(--borderButton);
+  background-color: var(--fundoButton);
+  color: var(--corLetra);
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  text-wrap: nowrap;
+  
+
+  box-shadow: 0 0px 6px 2px var(--sombraButtonTema);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s ease;
+}
+
+.skill2:hover .tooltip2 {
+  opacity: 1;
+}
+
 /* Projetos */
 
 .projetos {
@@ -210,6 +258,7 @@ header svg {
 }
 
 .skillsProjetoAgrupado {
+    cursor: pointer;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
@@ -298,6 +347,7 @@ header svg {
 }
 
 .buttonProjetos {
+     cursor: pointer;
     display: flex;
     padding: 4px 80px;
     font-size: 20px;
@@ -305,9 +355,9 @@ header svg {
     border-radius: 5px;
     border: solid 1px var(--borderButton);
     background-color: var(--fundoButton);
+    color: var(--corLetra);
     transition: 0.5s;
     gap: 8px;
-    color: var(--corLetra);
     text-align: center;
     text-decoration: none;
 }
@@ -488,11 +538,12 @@ header svg {
 
 .skills {
     background: linear-gradient(150deg, var(--linearSkills2), var(--linearSkills1));
-    padding: 50px 0px;
+    padding: 35px 0px;
     box-shadow: 0 0px 20px 10px var(--sombraButtonTema);
 }
 
 .skills .skillTitulo {
+    margin-bottom: 25px;
     font-size: 70px;
     font-weight: 600;
     color: var(--corLetra);
@@ -506,6 +557,7 @@ header svg {
 }
 
 .skills ul svg {
+    cursor: pointer;
     width: 90px;
     height: auto;
     color: var(--corSkills);
@@ -523,6 +575,40 @@ header svg {
 
 .skills ul svg .insideColor2 {
     color: var(--background);
+}
+
+.skills ul svg .insideColor3{
+    color: var(--insideColor3);
+}
+
+.skill {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  border: solid 1px var(--borderButton);
+  background-color: var(--fundoButton);
+  color: var(--corLetra);
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 15px;
+
+  box-shadow: 0 0px 6px 2px var(--sombraButtonTema);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s ease;
+}
+
+.skill:hover .tooltip {
+  opacity: 1;
 }
 
 /* Jornada */
@@ -569,12 +655,17 @@ header svg {
     display: flex;
     border-radius: 5px;
     align-items: center;
-    /* border: solid 3px var(--bordaLinkContato); */
     width: 700px;
     height: 70px;
     background: linear-gradient(90deg, var(--backgroundLinkContato) 0%, var(--backgroundLinkContato) 40%, #cbc5f800 100%);
     margin-bottom: 18px;
     transition: 0.5s;
+}
+
+.contatoAgrupado a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 .cardContato:hover {
@@ -616,23 +707,25 @@ header svg {
 /* Footer */
 
 footer {
-    border-top: solid 5px #09054a;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--corHeader);
+    background: linear-gradient(var(--background)0%,var(--background)50% ,var(--background)100%);
     padding: 1em;
     box-shadow: 0 -5px 20px 3px var(--sombra);
 }
 
 footer img {
-    width: 300px;
+    width: 150px;
     height: auto;
     align-items: center;
     display: flex;
     justify-content: center;
 
 }
+
+
+
 
 
 /* cores tema */
@@ -653,6 +746,7 @@ footer img {
     --brancoOpaco: #ffffff2f;
     --roxoEscuroOpaco: #7C68FF80;
     --roxoEscuro: #3C3A49;
+    --insideColors:#ded8fe ;
 }
 
 .tema-escuro {
@@ -688,7 +782,9 @@ footer img {
     --backgroundModal1: var(--roxoEscuro);
     --backgroundModal2: var(--cinza);
     --bordaModal: var(--roxoC);
-
+--fundoScroll: var(--corIconeSkill);
+--insideColor3: var(--cinza);
+ --backgroundFooter: var(--roxoC);
 }
 
 .tema-claro {
@@ -711,6 +807,7 @@ footer img {
     --fundoBotãoProjetos: var(--azulEscuro);
     --borderButton: var(--azulEscuro);
     --fundoButton: var(--roxoEscuroOpaco);
+   
 
     --detalheTemaButton: var(--branco);
     --backgroundLinkContato: var(--roxoE);
@@ -724,5 +821,7 @@ footer img {
     --backgroundModal1: var(--roxoC);
     --backgroundModal2: var(--background);
     --bordaModal: var(--roxoE);
-
+--fundoScroll: var(--roxoEscuroOpaco);
+--insideColor3: var(--insideColors);
+--backgroundFooter: var(--corFundoCardClaro);
 }
