@@ -2,6 +2,7 @@ const abrir = document.getElementById('abrir');
 const fechar = document.getElementById('fechar');
 const modal = document.getElementById('modal');
 
+
 abrir.addEventListener('click', () => {
   modal.classList.add('ativo');
 });

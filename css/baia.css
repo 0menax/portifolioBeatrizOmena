@@ -1,6 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(160deg, #ffb74a, #FDDDAD, #6ae4ff, #00D1FF, #0019FF) no-repeat;
+    background: linear-gradient(160deg, #ffc062, #FDDDAD, #6ae4ff, #00D1FF, #394cff) no-repeat;
     /* visualização */
 
 }
@@ -279,22 +279,22 @@ body {
 }
 
 .botoes a {
-    padding: 20px 10em;
+
+    padding: 1em 1em;
     font-size: 25px;
     font-weight: 600;
     border-radius: 5px;
-    background: linear-gradient(90deg, #ffb74a00, #ffb74a, #FDDDAD, #6ae4ff, #00D1FF, #0019FF, #001aff00);
+    background: linear-gradient(90deg, #ffffff, #ffb74a);
     color: #060434;
     text-align: center;
     text-decoration: none;
     width: 400px;
     height: auto;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .botoes a:hover {
-    background: linear-gradient(90deg, #ffb74a, #FDDDAD, #6ae4ff, #00D1FF, #0019FF);
     color: #E04700;
-    transform: scale(1.02);
-box-shadow: 0 0px 0px 8px #0019FF;
+    transform: scale(1.05);
+box-shadow: 0 0px 0px 2px #E04700;
 }

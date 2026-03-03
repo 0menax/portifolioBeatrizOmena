@@ -7,6 +7,14 @@ body {
 
 }
 
+* {
+  transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Universal */
 .strongO {
     font-weight: 700;
@@ -114,7 +122,18 @@ header svg {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
+
+    opacity: 0;
+    transform: translateY(40px);
+   transition: opacity 0.6s ease, transform 0.6s ease;
+    
 }
+
+.home.active {
+    opacity: 1;
+      transform: translateY(0);
+    }
 
 .homeAgrupado {
     gap: 35px;
@@ -237,9 +256,19 @@ header svg {
     width: 100%;
     padding: 50px;
     margin-bottom: 3em;
-    position: relative;
+  display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    transform: translateY(40px);
+   transition: opacity 0.6s ease, transform 0.6s ease;
+    
+}
+
+.projetos.active {
+    opacity: 1;
+      transform: translateY(0);
 }
 
 .projetos h1 {
@@ -316,6 +345,19 @@ header svg {
     box-shadow: 3px 3px 3px 1px var(--sombra);
     transition: 0.5s;
     flex-direction: column;
+
+      opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.projetos.active .cardProjeto:nth-child(1) { transition-delay: 0.1s; }
+.projetos.active .cardProjeto:nth-child(2) { transition-delay: 0.2s; }
+.projetos.active .cardProjeto:nth-child(3) { transition-delay: 0.3s; }
+
+.projetos.active .cardProjeto {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .cardProjeto:hover {
@@ -364,7 +406,6 @@ header svg {
 
 .buttonProjetos:hover {
     transform: scale(1.02);
-
     box-shadow: 0 0px 20px 4px var(--sombraButtonTema);
     background-color: var(--borderProjetos);
 }
@@ -382,29 +423,49 @@ header svg {
 /* modal */
 
 .modalProjetos {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.7);
-    display: none;
-    /* começa escondido */
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
 
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
 }
 
 .modalProjetos.ativo {
-    display: flex;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
-.modalProjetosConteudo {
-    border: solid 5px var(--bordaModal);
-    background: linear-gradient(-40deg, var(--backgroundModal1)0%, var(--backgroundModal1)40%, var(--backgroundModal2)60%, var(--backgroundModal2)100%);
-    padding: 40px;
-    border-radius: 8px;
-    max-width: 1300px;
-    width: 90%;
 
+
+.modalProjetosConteudo {
+  border: solid 5px var(--bordaModal);
+  background: linear-gradient(-40deg,
+    var(--backgroundModal1) 0%,
+    var(--backgroundModal1) 40%,
+    var(--backgroundModal2) 60%,
+    var(--backgroundModal2) 100%
+  );
+  padding: 40px;
+  border-radius: 8px;
+  max-width: 1300px;
+  width: 90%;
+
+  transform: scale(0.95);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.modalProjetos.ativo .modalProjetosConteudo {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .modalProjetosConteudo h1 {
@@ -484,10 +545,20 @@ header svg {
 
 
 
+
+
 /* About me */
 
 .aboutMe {
     padding: 0px 80px;
+     opacity: 0;
+    transform: translateY(40px);
+   transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.aboutMe.active {
+    opacity: 1;
+      transform: translateY(0);
 }
 
 .aboutMeAgrupado {
@@ -540,6 +611,16 @@ header svg {
     background: linear-gradient(150deg, var(--linearSkills2), var(--linearSkills1));
     padding: 35px 0px;
     box-shadow: 0 0px 20px 10px var(--sombraButtonTema);
+    
+opacity: 0;
+    transform: translateY(40px);
+   transition: opacity 0.6s ease, transform 0.6s ease;
+    
+}
+
+.skills.active {
+    opacity: 1;
+      transform: translateY(0);
 }
 
 .skills .skillTitulo {
@@ -561,8 +642,9 @@ header svg {
     width: 90px;
     height: auto;
     color: var(--corSkills);
-    transition: 0.5s;
-}
+  }
+
+
 
 .skills ul svg:hover {
     transform: translateY(-5px);
@@ -617,6 +699,14 @@ header svg {
 /* Contato */
 .contato {
     padding: 30px;
+        opacity: 0;
+    transform: translateY(40px);
+   transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.contato.active{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .contatoAgrupado {
@@ -659,13 +749,31 @@ header svg {
     height: 70px;
     background: linear-gradient(90deg, var(--backgroundLinkContato) 0%, var(--backgroundLinkContato) 40%, #cbc5f800 100%);
     margin-bottom: 18px;
-    transition: 0.5s;
+    
+    
+      opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.6s ease;
 }
 
+.contato.active .cardContato {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.contato.active .cardContato:nth-child(1) { transition-delay: 0.1s; }
+.contato.active .cardContato:nth-child(2) { transition-delay: 0.3s; }
+.contato.active .cardContato:nth-child(3) { transition-delay: 0.5s; }
+.contato.active .cardContato:nth-child(4) { transition-delay: 0.7s; }
+
+
+
 .contatoAgrupado a{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+   display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  text-decoration: none;
 }
 
 .cardContato:hover {
@@ -710,7 +818,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(var(--background)0%,var(--background)50% ,var(--background)100%);
+     background: linear-gradient(45deg, var(--backgroundFooter3), var(--backgroundFooter2), var(--background2) ,var(--backgroundFooter));
     padding: 1em;
     box-shadow: 0 -5px 20px 3px var(--sombra);
 }
@@ -724,6 +832,25 @@ footer img {
 
 }
 
+.footerAgrupado{
+    text-align: center;
+
+}
+
+footer .footerAgrupado h1{
+    margin-bottom: 10px;
+    color: var(--corLetra);
+    font-weight: 600;
+    font-size: 30px;
+}
+
+footer .footerAgrupado p {
+
+    margin-bottom: 5px;
+    color: var(--corLetra);
+    font-size: 18px;
+    margin-left: 10px;
+}
 
 
 
@@ -784,7 +911,9 @@ footer img {
     --bordaModal: var(--roxoC);
 --fundoScroll: var(--corIconeSkill);
 --insideColor3: var(--cinza);
- --backgroundFooter: var(--roxoC);
+--backgroundFooter: var(--roxoC);
+--backgroundFooter2: var(--cinza);
+--backgroundFooter3: var(--preto);
 }
 
 .tema-claro {
@@ -823,5 +952,10 @@ footer img {
     --bordaModal: var(--roxoE);
 --fundoScroll: var(--roxoEscuroOpaco);
 --insideColor3: var(--insideColors);
---backgroundFooter: var(--corFundoCardClaro);
+--backgroundFooter: var(--roxoC);
+--backgroundFooter2: var(--roxoE);
+--backgroundFooter3: var(--azulEscuro);
 }
+
+/* responsividade */
+
