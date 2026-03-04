@@ -176,7 +176,6 @@ header svg {
 
 .iconsHome ul li {
     transition: 0.5s;
-    filter: drop-shadow(1px 1px 1px var(--sombraButtonTema));
 
 }
 
@@ -1985,4 +1984,288 @@ footer .footerAgrupado p {
 
 }
 
+@media screen and (max-width: 392px) {
+    body {
+          background: linear-gradient(var(--background2)0%, var(--background)3%, var(--background)100%);
+    }
+}
+
+        /* header */
+        
+    .containerHeader {
+        max-width: 350px;
+        padding: 10px 0;
+        justify-content: space-around;
+        gap: 1em;
+    }
+
+    .nome-header {
+        font-size: 25px;
+        text-align: left;
+    }
+
+    header ul {
+        gap: 40px;
+    }
+
+    .btn-tema {
+        width: 35px;
+        height: 35px;
+    }
+
+    .containerHeader ul {
+        display: none;
+    }
+
+    /* home */
+
+    .home {
+        margin-top: 30px;
+         
+    }
+
+    .homeAgrupado {
+        text-align: center;
+        gap: 5px;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+   
+
+    .imagemHome {
+        width: 150px;
+        padding: 0px;
+    }
+
+    .textoHomeAgrupado h1 {
+        font-size: 28px;
+    }
+   
+
+    .textoHomeAgrupado h2 {
+        font-size: 20px;
+    }
+
+    .textoHomeAgrupado h3 {
+        margin-left: 0;
+        font-size: 15px;
+    }
+
+    .textoHomeAgrupado p {
+        margin-left: 0;
+        font-size: 13px;
+    }
+
+    .home .destaqueHome {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    .iconsHome ul {
+        gap: 1em;
+    }
+
+    .iconsHome ul svg {
+        
+        width: 50px;
+    }
+
+    /* projetos */
+    .projetos {
+        padding: 30px;
+    }
+
+    .projetosAgrupado {
+        gap: 5px;
+        flex-direction: column;
+    }
+
+    .cardProjeto {
+        width: 300px;
+        height: 600px;
+        justify-content: flex-start;
+
+    }
+
+    .skillsProjetoAgrupado {
+        gap: 5px;
+    }
+
+    .imagemProjeto {
+        width: 300px;
+    }
+  
+    .projetos h1 {
+        font-size: 25px;
+    }
+
+    .subProjetoh2 {
+        font-size: 20px;
+    }
+
+    .projetos .cardProjeto h1 {
+        font-size: 25px;
+    }
+
+    .projetos .cardProjeto p {
+        font-size: 18px;
+    }
+
+    .skillsProjeto{
+        width: 70px;
+        font-size: 13px;
+    }
+
+    /* modal */
+    .modalProjetosConteudo {
+        max-width: 70%;
+        height: 600px;
+        overflow-y: auto;
+
+    }
+
+    .modalProjetosConteudo h1 {
+        font-size: 40px;
+    }
+
+    .modalProjetosConteudo h2 {
+        font-size: 20px;
+    }
+
+    .modalProjetosConteudo h3 {
+        font-size: 20px;
+    }
+
+    .modalProjetosConteudo p {
+        font-size: 15px;
+    }
+
+    .modalProjetosConteudo::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .modalProjetosConteudo::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .modalProjetosConteudo::-webkit-scrollbar-thumb {
+        background: var(--corLetra);
+    }
+
+    /* skills */
+
+    .skills {
+        padding: 20px 20px;
+
+    }
+
+    .skills .skillTitulo {
+        font-size: 50px;
+    }
+
+    .skills ul {
+        gap: 2em;
+        flex-wrap: wrap;
+
+    }
+
+    .skills ul svg {
+        width: 50px;
+
+    }
+
+    /* about Me */
+    .aboutMe {
+        padding: 20px;
+    }
+
+    .aboutMeAgrupado {
+        padding: 30px;
+        flex-direction: column;
+
+    }
+
+    .aboutMe h1 {
+        font-size: 50px;
+    }
+
+    .aboutMe p {
+        font-size: 20px;
+    }
+
+    .aboutMe .aboutMeAgrupado img {
+        width: 330px;
+    }
+
+        /* contato */
+
+    .contatoH1 {
+        font-size: 50px;
+    }
+
+    .contatoH2 {
+        font-size: 20px;
+    }
+
+    .contato img {
+        width: 300px;
+    }
+
+    .aboutMe p {
+        font-size: 20px;
+    }
+
+    
+    .cardContato {
+        width: 350px;
+        background: linear-gradient(90deg, var(--backgroundLinkContato) 0%, var(--backgroundLinkContato) 100%);
+    }
+ 
+    .contato h3{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .cardContato svg{
+         width: 40px;
+    }
+
+    .contatoAgrupado {
+        gap: 0em;
+        flex-direction: column;
+    }
+
+   .cardContato h1 {
+ font-size: 16px;
+    }
+     .cardContato h2 {
+ font-size: 15px;
+    }
+
+    
+
+          /* Footer */
+
+     footer{
+        flex-direction: column;
+            background: linear-gradient(45deg, var(--backgroundFooter2), var(--backgroundFooter2), var(--background2), var(--backgroundFooter));
+     }
+
+     footer img {
+    width: 130px;
+     }
+
+     footer .footerAgrupado h1{
+        font-size: 25px;
+     }
+
+     footer .footerAgrupado p{
+        font-size: 18px;
+     }
+
+     .footerAgrupado {
+    padding: 5px;
+
+}
 }
