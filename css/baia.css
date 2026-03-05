@@ -57,13 +57,14 @@ body {
     font-weight: 800;
 }
 
-/* conteudo */
+/* contexto */
 
 .contexto {
     padding: 2em;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .contextoAgrupado {
@@ -83,6 +84,7 @@ body {
     color: #060434;
     font-weight: 500;
     font-size: 30px;
+    flex-wrap: wrap;
 }
 
 .gifInterface {
@@ -155,6 +157,7 @@ body {
 .responsavel {
     padding: 2em;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -163,33 +166,40 @@ body {
     padding: 2em;
     display: flex;
     justify-content: right;
-    flex-direction: column;
 }
 
 .responsavel h1 {
-    text-align: right;
+    text-align: center;
     color: #E04700;
     font-weight: 800;
     font-size: 65px;
+    margin-bottom: 20px;
 }
 
 .gifBaiaResponsavel {
     border: solid 5px #E04700;
-    width: 600px;
-    height: auto;
-    border-radius: 20PX;
+    width: 500px;
+    height: 450px;
+    border-radius: 20px;
 }
 
 .responsavel ul {
-    margin-top: 15px;
-    text-align: right;
+    text-align: left;
     color: #060434;
     font-weight: 500;
     font-size: 30px;
+    flex-wrap: wrap;
+   
 }
 
 .responsavel ul li {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+   
+}
+
+.gifTextoAgrupado{
+    display: flex;
+text-align: center;
 }
 
 /* abordagem */
@@ -209,6 +219,7 @@ body {
 }
 
 .abordagemAgrupado h1 {
+    margin-bottom: 20px;
     text-align: left;
     color: #E04700;
     font-weight: 800;
@@ -297,4 +308,439 @@ body {
     color: #E04700;
     transform: scale(1.05);
 box-shadow: 0 0px 0px 2px #E04700;
+}
+
+@media screen and (max-width: 1024px){
+
+    /* topo */
+.topoProjetos img {
+    width: 1000px;
+}
+
+
+/* conceito */
+.conceito{
+    padding: 4em;
+}
+
+/* atuação */
+.atuação{
+    padding: 4em;
+}
+
+/* abordagem */
+.abordagem{
+    padding: 4em;
+}
+
+.abordagemAgrupado h1 {
+    font-size: 50px;
+}
+
+.abordagem img{
+     width: 550px;
+     height: auto;
+}
+
+/* responsavel */
+.responsavel{
+    padding: 4em;
+}
+
+.gifBaiaResponsavel{
+     width: 400px;
+     height: 350px;
+}
+
+
+.responsavel h1 {
+    font-size: 50px;
+    flex-wrap: wrap;
+}
+
+.responsavel ul{
+    font-size: 25px;
+     text-align: left;
+}
+
+/* resultado */
+.resultado img{
+    width: 400px;
+    height: auto;
+}
+
+}
+
+@media screen and (max-width: 768px){
+   
+    /* topo */
+.topoProjetos img {
+    width: 750px;
+}
+
+
+/* conceito */
+.conceito{
+    padding: 4em;
+}
+
+/* atuação */
+.atuação{
+    padding: 4em;
+}
+
+/* abordagem */
+.abordagem{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 4em;
+    flex-direction: column;
+}
+
+.abordagemAgrupado h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.abordagem img{
+     width: 550px;
+     height: auto;
+}
+
+/* responsavel */
+.responsavel{
+    padding: 4em;
+}
+
+.gifBaiaResponsavel{
+     width: 400px;
+     height: 350px;
+     
+}
+.gifTextoAgrupado{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+.responsavel h1 {
+    font-size: 50px;
+        margin-bottom: 10px;
+}
+
+.responsavel ul{
+    margin-bottom: 10px;
+    font-size: 25px;
+     text-align: center;
+     flex-wrap: wrap;
+}
+
+/* resultado */
+.resultado img{
+    width: 400px;
+    height: auto;
+}
+
+}
+
+@media screen and (max-width: 480px){
+   
+    /* topo */
+.topoProjetos img {
+    width: 430px;
+}
+
+.topoProjetosAgrupado h1 {
+    font-size: 50px;
+}
+.topoProjetosAgrupado h2 {
+    font-size: 30px;
+}
+.topoProjetosAgrupado h3 {
+    font-size: 20px;
+}
+.topoProjetosAgrupado p {
+    font-size: 15px;
+}
+
+
+/* contexto */
+.contexto{
+    padding: 1em;
+}
+
+.contexto h1{
+    font-size: 40px;
+}
+
+.contexto p{
+    font-size: 23px;
+}
+
+.gifInterface {
+    width: 180px;
+    height: auto;
+}
+
+/* conceito */
+
+.conceito{
+    padding: 1em;
+}
+
+.conceito h1{
+    font-size: 40px;
+}
+
+.conceito p{
+    font-size: 23px;
+}
+
+/* atuação */
+.atuacao{
+    padding: 1em;
+}
+.atuacao h1{
+    font-size: 40px;
+}
+
+.atuacao p{
+    font-size: 23px;
+}
+
+/* responsavel */
+.responsavel{
+    padding: 2em;
+}
+
+.responsavel h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.gifBaiaResponsavel{
+     width: 300px;
+     height: 250px;
+     
+}
+.gifTextoAgrupado{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.responsavel ul{
+    margin-bottom: 10px;
+    font-size: 25px;
+     text-align: center;
+     flex-wrap: wrap;
+}
+
+
+/* abordagem */
+.abordagem{
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 2em;
+    flex-direction: column;
+}
+
+.abordagemAgrupado h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.abordagemAgrupado p {
+    text-align: center;
+}
+
+.abordagem img{
+     width: 400px;
+     height: auto;
+}
+
+/* resultado */
+
+.topoResultadoAgrupado h1{
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.topoResultadoAgrupado p{
+    font-size: 25px;
+}
+
+
+
+.resultado {
+    padding: 2em;
+}
+
+.resultado img{
+    width: 300px;
+    height: auto;
+}
+
+/* BOTOES */
+.botoes a{
+     width: 330px;
+     font-size: 23px;
+}
+
+
+}
+
+@media screen and (max-width: 392px){
+    
+    /* topo */
+.topoProjetos img {
+    width: 380px;
+}
+
+.topoProjetosAgrupado h1 {
+    font-size: 50px;
+}
+.topoProjetosAgrupado h2 {
+    font-size: 30px;
+}
+.topoProjetosAgrupado h3 {
+    font-size: 20px;
+}
+.topoProjetosAgrupado p {
+    font-size: 15px;
+}
+
+
+/* contexto */
+.contexto{
+    padding: 1em;
+}
+
+.contexto h1{
+    font-size: 40px;
+}
+
+.contexto p{
+    font-size: 23px;
+}
+
+.gifInterface {
+    width: 120px;
+    height: auto;
+}
+
+/* conceito */
+
+.conceito{
+    padding: 1em;
+}
+
+.conceito h1{
+    font-size: 40px;
+}
+
+.conceito p{
+    font-size: 23px;
+}
+
+/* atuação */
+.atuacao{
+    padding: 1em;
+}
+.atuacao h1{
+    font-size: 40px;
+}
+
+.atuacao p{
+    font-size: 23px;
+}
+
+/* responsavel */
+.responsavel{
+    padding: 2em;
+}
+
+.responsavel h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.gifBaiaResponsavel{
+     width: 300px;
+     height: 250px;
+     
+}
+.gifTextoAgrupado{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.responsavel ul{
+    margin-bottom: 10px;
+    font-size: 25px;
+     text-align: center;
+     flex-wrap: wrap;
+}
+
+
+/* abordagem */
+.abordagem{
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 2em;
+    flex-direction: column;
+}
+
+.abordagemAgrupado h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.abordagemAgrupado p {
+    text-align: center;
+}
+
+.abordagem img{
+     width: 350px;
+     height: auto;
+}
+
+/* resultado */
+
+.topoResultadoAgrupado h1{
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.topoResultadoAgrupado p{
+    font-size: 25px;
+}
+
+
+
+.resultado {
+    padding: 2em;
+}
+
+.resultado img{
+    width: 250px;
+    height: auto;
+}
+
+/* BOTOES */
+.botoes a{
+     width: 300px;
+     font-size: 22px;
+}
+
 }
