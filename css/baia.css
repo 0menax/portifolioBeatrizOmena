@@ -607,11 +607,11 @@ box-shadow: 0 0px 0px 2px #E04700;
 
 }
 
-@media screen and (max-width: 392px){
+@media screen and (max-width: 360px){
     
     /* topo */
 .mascoteBaia{
-    width: 380px;
+    width: 350px;
 }
 
 .topoProjetosAgrupado h1 {
@@ -634,11 +634,11 @@ box-shadow: 0 0px 0px 2px #E04700;
 }
 
 .contexto h1{
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .contexto p{
-    font-size: 23px;
+    font-size: 15px;
 }
 
 .gifInterface {
@@ -653,11 +653,11 @@ box-shadow: 0 0px 0px 2px #E04700;
 }
 
 .conceito h1{
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .conceito p{
-    font-size: 23px;
+    font-size: 15px;
 }
 
 /* atuação */
@@ -665,11 +665,11 @@ box-shadow: 0 0px 0px 2px #E04700;
     padding: 1em;
 }
 .atuacao h1{
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .atuacao p{
-    font-size: 23px;
+    font-size: 15px;
 }
 
 /* responsavel */
@@ -678,7 +678,7 @@ box-shadow: 0 0px 0px 2px #E04700;
 }
 
 .responsavel h1 {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
@@ -696,7 +696,7 @@ box-shadow: 0 0px 0px 2px #E04700;
 
 .responsavel ul{
     margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 15px;
      text-align: center;
      flex-wrap: wrap;
 }
@@ -713,28 +713,29 @@ box-shadow: 0 0px 0px 2px #E04700;
 }
 
 .abordagemAgrupado h1 {
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
 }
 
 .abordagemAgrupado p {
     text-align: center;
+    font-size: 15px;
 }
 
 .abordagem img{
-     width: 350px;
+     width: 300px;
      height: auto;
 }
 
 /* resultado */
 
 .topoResultadoAgrupado h1{
-    font-size: 55px;
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
 .topoResultadoAgrupado p{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 
@@ -744,7 +745,7 @@ box-shadow: 0 0px 0px 2px #E04700;
 }
 
 .resultado img{
-    width: 250px;
+    width: 230px;
     height: auto;
 }
 
@@ -754,7 +755,7 @@ box-shadow: 0 0px 0px 2px #E04700;
      font-size: 22px;
 }
 
-@media screen and (max-width: 340px){
+@media screen and (max-width: 320px){
     /* topo */
 .mascoteBaia {
     width: 320px;
@@ -828,8 +829,8 @@ box-shadow: 0 0px 0px 2px #E04700;
 }
 
 .gifBaiaResponsavel{
-     width: 300px;
-     height: 250px;
+     width: 250px;
+     height: 230px;
      
 }
 .gifTextoAgrupado{
@@ -867,7 +868,7 @@ box-shadow: 0 0px 0px 2px #E04700;
 }
 
 .abordagem img{
-     width: 300px;
+     width: 280px;
      height: auto;
 }
 
@@ -889,7 +890,7 @@ box-shadow: 0 0px 0px 2px #E04700;
 }
 
 .resultado img{
-    width: 250px;
+    width: 200px;
     height: auto;
 }
 
