@@ -604,10 +604,10 @@ box-shadow: 0 0px 0px 2px #E04700;
      font-size: 23px;
 }
 
-
 }
 
-@media screen and (max-width: 360px){
+
+@media screen and (max-width: 420px){
     
     /* topo */
 .mascoteBaia{
@@ -751,8 +751,8 @@ box-shadow: 0 0px 0px 2px #E04700;
 
 /* BOTOES */
 .botoes a{
-     width: 300px;
-     font-size: 22px;
+     width: 250px;
+     font-size: 18px;
 }
 
 @media screen and (max-width: 320px){
