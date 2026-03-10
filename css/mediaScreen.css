@@ -1327,7 +1327,7 @@
     }
 
 }
-    @media screen and (max-width: 392px) {
+    @media screen and (max-width: 320px) {
         body {
             background: linear-gradient(var(--background2)0%, var(--background)3%, var(--background)100%);
         }
@@ -1336,24 +1336,24 @@
     /* header */
 
     .containerHeader {
-        max-width: 330px;
+        max-width: 300px;
         padding: 10px 0;
         justify-content: space-around;
-        gap: 1em;
+        gap: 1px;
     }
 
     .nome-header {
-        font-size: 25px;
+        font-size: 20px;
         text-align: left;
     }
 
     header ul {
-        gap: 40px;
+        gap: 10px;
     }
 
     .btn-tema {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
     }
 
 
@@ -1387,7 +1387,7 @@
         position: relative;
         border: none;
         background-color: var(--corHeader);
-        width: 45px;
+        width: 40px;
         height: auto;
         border-radius: 10px;
     }
@@ -1515,8 +1515,8 @@
     }
 
     .cardProjeto {
-        width: 290px;
-        height: 610px;
+        width: 225px;
+        height: 665px;
         justify-content: flex-start;
 
     }
@@ -1526,7 +1526,7 @@
     }
 
     .imagemProjeto {
-        width: 290px;
+        width: 230px;
     }
 
     .projetos h1 {
@@ -1538,7 +1538,7 @@
     }
 
     .projetos .cardProjeto h1 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .projetos .cardProjeto p {
@@ -1550,6 +1550,36 @@
         font-size: 13px;
     }
 
+    .buttonProjetos{
+        font-size: 18px;
+        padding: 6px 50px;
+    }
+
+/* skills */
+
+.skills .skillTitulo {
+    margin-bottom: 25px;
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--corLetra);
+}
+
+    .skills {
+        padding: 25px 0px;
+
+    }
+
+
+    .skills ul {
+        gap: 2em;
+        flex-wrap: wrap;
+
+    }
+
+    .skills ul svg {
+        width: 40px;
+
+    }
 
     /* about Me */
     .aboutMe {
@@ -1571,7 +1601,7 @@
     }
 
     .aboutMe .aboutMeAgrupado img {
-        width: 330px;
+        width: 290px;
     }
 
     /* contato */
@@ -1585,7 +1615,7 @@
     }
 
     .contato img {
-        width: 300px;
+        width: 290px;
     }
 
     .aboutMe p {
@@ -1594,9 +1624,11 @@
 
 
     .cardContato {
-        width: 350px;
+        
+        width: 290px;
         background: linear-gradient(90deg, var(--backgroundLinkContato) 0%, var(--backgroundLinkContato) 100%);
     }
+   
 
     .contato h3 {
         text-align: center;
@@ -1604,7 +1636,8 @@
     }
 
     .cardContato svg {
-        width: 40px;
+       display: none;
+       align-items: center;
     }
 
     .contatoAgrupado {
@@ -1613,11 +1646,12 @@
     }
 
     .cardContato h1 {
-        font-size: 16px;
+        margin-left: 15px;
+        font-size: 15px;
     }
 
     .cardContato h2 {
-        font-size: 15px;
+        font-size: 14px;
     }
 
 
