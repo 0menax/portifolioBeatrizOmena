@@ -1349,7 +1349,7 @@ body {
     }
 
 }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 360px) {
         body {
             background: linear-gradient(var(--background2)0%, var(--background)3%, var(--background)100%);
         }
@@ -1535,7 +1535,7 @@ body {
         flex-direction: column;
     }
 
-    .cardProjeto {
+    .projetos .projetosAgrupado  .cardProjeto {
         width: 225px;
         height: auto;
         justify-content: flex-start;
