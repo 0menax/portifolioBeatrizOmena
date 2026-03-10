@@ -910,7 +910,7 @@
 
     /* header */
     .containerHeader {
-        max-width: 400px;
+        max-width: 350px;
         padding: 10px 0;
         justify-content: space-between;
         gap: 1em;
@@ -1079,27 +1079,27 @@
     }
 
     .projetosAgrupado {
-        gap: 10px;
+        gap: 5px;
         flex-direction: column;
     }
 
     .cardProjeto {
-        width: 330px;
+        width: 300px;
         height: 600px;
         justify-content: flex-start;
 
     }
 
     .skillsProjetoAgrupado {
-        gap: 5px;
+        gap: 2px;
     }
 
     .imagemProjeto {
-        width: 330px;
+        width: 290px;
     }
 
     .projetos h1 {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .subProjetoh2 {
@@ -1114,6 +1114,68 @@
         font-size: 18px;
     }
 
+    .skillsProjeto {
+        width: 70px;
+        font-size: 13px;
+    }
+
+    /* modal */
+    .modalProjetosConteudo {
+        max-width: 70%;
+        height: 600px;
+        overflow-y: auto;
+
+    }
+
+    .modalProjetosConteudo h1 {
+        font-size: 40px;
+    }
+
+    .modalProjetosConteudo h2 {
+        font-size: 20px;
+    }
+
+    .modalProjetosConteudo h3 {
+        font-size: 20px;
+    }
+
+    .modalProjetosConteudo p {
+        font-size: 15px;
+    }
+
+    .modalProjetosConteudo::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .modalProjetosConteudo::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .modalProjetosConteudo::-webkit-scrollbar-thumb {
+        background: var(--corLetra);
+    }
+
+    /* skills */
+
+    .skills {
+        padding: 20px 20px;
+
+    }
+
+    .skills .skillTitulo {
+        font-size: 50px;
+    }
+
+    .skills ul {
+        gap: 2em;
+        flex-wrap: wrap;
+
+    }
+
+    .skills ul svg {
+        width: 50px;
+
+    }
     /* modal */
     .modalProjetosConteudo {
         max-width: 70%;
@@ -1274,7 +1336,7 @@
     /* header */
 
     .containerHeader {
-        max-width: 350px;
+        max-width: 330px;
         padding: 10px 0;
         justify-content: space-around;
         gap: 1em;
@@ -1442,7 +1504,7 @@
         width: 50px;
     }
 
-    /* projetos */
+       /* projetos */
     .projetos {
         padding: 30px;
     }
@@ -1488,63 +1550,6 @@
         font-size: 13px;
     }
 
-    /* modal */
-    .modalProjetosConteudo {
-        max-width: 70%;
-        height: 600px;
-        overflow-y: auto;
-
-    }
-
-    .modalProjetosConteudo h1 {
-        font-size: 40px;
-    }
-
-    .modalProjetosConteudo h2 {
-        font-size: 20px;
-    }
-
-    .modalProjetosConteudo h3 {
-        font-size: 20px;
-    }
-
-    .modalProjetosConteudo p {
-        font-size: 15px;
-    }
-
-    .modalProjetosConteudo::-webkit-scrollbar {
-        width: 10px;
-    }
-
-    .modalProjetosConteudo::-webkit-scrollbar-track {
-        background: transparent;
-    }
-
-    .modalProjetosConteudo::-webkit-scrollbar-thumb {
-        background: var(--corLetra);
-    }
-
-    /* skills */
-
-    .skills {
-        padding: 20px 20px;
-
-    }
-
-    .skills .skillTitulo {
-        font-size: 50px;
-    }
-
-    .skills ul {
-        gap: 2em;
-        flex-wrap: wrap;
-
-    }
-
-    .skills ul svg {
-        width: 50px;
-
-    }
 
     /* about Me */
     .aboutMe {
