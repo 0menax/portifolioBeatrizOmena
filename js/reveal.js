@@ -1,5 +1,5 @@
 
-const elementos = document.querySelectorAll('.home,.projetos, .skills, .aboutMe, .contato ');
+const elementos = document.querySelectorAll('.home,.projetos, .tecnologias, .aboutMe, .contato ');
 
 
 function animarScroll() {

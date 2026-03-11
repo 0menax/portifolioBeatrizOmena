@@ -14,6 +14,7 @@
     }
 
     .homeAgrupado {
+        flex-wrap: wrap;
         gap: 10px;
     }
 
@@ -28,11 +29,12 @@
         padding: 30px;
     }
 
-    .projetosAgrupado {
+    .projetos  .projetosAgrupado {
         gap: 40px;
+        flex-wrap: wrap;
     }
 
-    .cardProjeto {
+    .projetos  .projetosAgrupado .cardProjeto {
         width: 380px;
         height: 650px;
     }
@@ -47,10 +49,11 @@
 
     }
 
-    /* skills */
+    /* tecnologias */
 
-    .skills ul {
+    .tecnologias ul {
         gap: 4em;
+        flex-wrap: wrap;
     }
 
     /* about me */
@@ -76,6 +79,10 @@
         font-size: 20px;
     }
 
+    .contatoAgrupado{
+flex-wrap: wrap;
+    }
+
 
 
 
@@ -96,6 +103,7 @@ body {
 
     .menu-icons ul {
         gap: 40px;
+        
     }
 
     .btn-tema {
@@ -196,17 +204,22 @@ body {
         background: var(--corLetra);
     }
 
-    /* skills */
+    /* tecnologias */
 
-    .skills .skillTitulo {
+    .tecnologias{
+        padding: 40px;
+    }
+
+    .tecnologias .skillTitulo {
         font-size: 60px;
     }
 
-    .skills ul {
+    .tecnologias ul {
         gap: 2.5em;
+        flex-wrap: wrap;
     }
 
-    .skills ul svg {
+    .tecnologias ul svg {
         width: 70px;
     }
 
@@ -438,12 +451,12 @@ body {
         padding: 30px;
     }
 
-    .projetosAgrupado {
+    .projetos .projetosAgrupado {
         gap: 20px;
         flex-direction: column;
     }
 
-    .cardProjeto {
+    .projetos .projetosAgrupado .cardProjeto {
         width: 550px;
         height: auto;
         justify-content: flex-start;
@@ -451,7 +464,7 @@ body {
     }
 
     .imagemProjeto {
-        width: 350px;
+        width: 550px;
     }
 
     .projetos h1 {
@@ -484,21 +497,24 @@ body {
         background: var(--corLetra);
     }
 
-    /* skills */
 
-    .skills {
-        padding: 20px 0px;
+
+    /* tecnologias */
+
+    .tecnologias {
+        padding: 40px;
     }
 
-    .skills .skillTitulo {
+    .tecnologias .skillTitulo {
         font-size: 50px;
     }
 
-    .skills ul {
-        gap: 2em;
+    .tecnologias ul {
+        gap: 1.5em;
+        flex-wrap: wrap;
     }
 
-    .skills ul svg {
+    .tecnologias ul svg {
         width: 50px;
     }
 
@@ -573,7 +589,248 @@ body {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 660px) {
+    
+/* home */
+
+    .home {
+        margin-top: 30px;
+    }
+
+    .homeAgrupado {
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+        flex-direction: column;
+    }
+
+    .imagemHome {
+        width: 200px;
+        padding: 0px;
+    }
+
+    .textoHomeAgrupado h1 {
+        font-size: 45px;
+    }
+
+    .textoHomeAgrupado h2 {
+        font-size: 30px;
+    }
+
+    .textoHomeAgrupado h3 {
+        margin-left: 0;
+        font-size: 25px;
+
+
+    }
+
+    .textoHomeAgrupado p {
+        margin-left: 0;
+        font-size: 20px;
+    }
+
+    .home .destaqueHome {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    .iconsHome {
+        align-items: center;
+    }
+
+    .iconsHome ul {
+        gap: 2.5em;
+    }
+
+    .iconsHome ul svg {
+        width: 70px;
+    }
+
+
+    /* projetos */
+    .projetos {
+        padding: 30px;
+    }
+
+    .projetos .projetosAgrupado {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .projetos .projetosAgrupado .cardProjeto {
+        width: 450px;
+        height: auto;
+        justify-content: flex-start;
+
+    }
+
+    .imagemProjeto {
+        width: 340px;
+    }
+
+    .projetos h1 {
+        font-size: 35px;
+    }
+
+    .subProjetoh2 {
+        font-size: 20px;
+    }
+
+
+
+    /* modal */
+    .modalProjetosConteudo {
+        max-width: 70%;
+        height: 600px;
+        overflow-y: auto;
+
+    }
+
+    .modalProjetosConteudo h1 {
+        font-size: 40px;
+    }
+
+    .modalProjetosConteudo h2 {
+        font-size: 20px;
+    }
+
+    .modalProjetosConteudo h3 {
+        font-size: 20px;
+    }
+
+    .modalProjetosConteudo p {
+        font-size: 15px;
+    }
+
+    .modalProjetosConteudo::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .modalProjetosConteudo::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .modalProjetosConteudo::-webkit-scrollbar-thumb {
+        background: var(--corLetra);
+    }
+
+    /* tecnologias */
+
+    .tecnologias {
+        padding: 20px;
+
+    }
+
+    .tecnologias .skillTitulo {
+        font-size: 50px;
+    }
+
+    .tecnologias ul {
+        gap: 2em;
+        flex-wrap: wrap;
+
+    }
+
+    .tecnologias ul svg {
+        width: 50px;
+
+    }
+
+    /* about Me */
+    .aboutMe {
+        padding: 20px;
+    }
+
+    .aboutMeAgrupado {
+        padding: 30px;
+        flex-direction: column;
+
+    }
+
+    .aboutMe .aboutMeAgrupado h1 {
+        font-size: 50px;
+    }
+
+    .aboutMe .aboutMeAgrupado p {
+        font-size: 23px;
+    }
+
+    .aboutMe .aboutMeAgrupado img {
+        width: 400px;
+    }
+
+    /* contato */
+
+    .contatoH1 {
+        font-size: 50px;
+    }
+
+    .contatoH2 {
+        font-size: 20px;
+    }
+
+    .contato img {
+        width: 400px;
+    }
+
+    .aboutMe p {
+        font-size: 20px;
+    }
+
+    .cardContato {
+        width: 500px;
+        background: linear-gradient(90deg, var(--backgroundLinkContato) 0%, var(--backgroundLinkContato) 100%);
+    }
+
+    .contato h3 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .cardContato svg {
+        width: 40px;
+    }
+
+    .contatoAgrupado {
+        gap: 0em;
+        flex-direction: column;
+    }
+
+    .cardContato h1 {
+        font-size: 17px;
+    }
+
+    .cardContato h2 {
+        font-size: 16px;
+    }
+
+    /* Footer */
+
+    footer {
+        flex-direction: column;
+        background: linear-gradient(45deg, var(--backgroundFooter2), var(--backgroundFooter2), var(--background2), var(--backgroundFooter));
+    }
+
+    footer img {
+        width: 130px;
+    }
+
+    footer .footerAgrupado h1 {
+        font-size: 25px;
+    }
+
+    footer .footerAgrupado p {
+        font-size: 18px;
+    }
+
+    .footerAgrupado {
+        padding: 10px;
+
+    }
+
+}
+
+@media screen and (max-width: 490px) {
     body {
         background: linear-gradient(var(--background2)0%, var(--background)6%, var(--background)100%);
     }
@@ -750,12 +1007,12 @@ body {
         padding: 30px;
     }
 
-    .projetosAgrupado {
+    .projetos .projetosAgrupado {
         gap: 10px;
         flex-direction: column;
     }
 
-    .cardProjeto {
+    .projetos .projetosAgrupado .cardProjeto {
         width: 340px;
         height: auto;
         justify-content: flex-start;
@@ -812,24 +1069,24 @@ body {
         background: var(--corLetra);
     }
 
-    /* skills */
+    /* tecnologias */
 
-    .skills {
+    .tecnologias {
         padding: 20px;
 
     }
 
-    .skills .skillTitulo {
+    .tecnologias .skillTitulo {
         font-size: 50px;
     }
 
-    .skills ul {
+    .tecnologias ul {
         gap: 2em;
         flex-wrap: wrap;
 
     }
 
-    .skills ul svg {
+    .tecnologias ul svg {
         width: 50px;
 
     }
@@ -876,7 +1133,7 @@ body {
     }
 
     .cardContato {
-        width: 420px;
+        width: 390px;
         background: linear-gradient(90deg, var(--backgroundLinkContato) 0%, var(--backgroundLinkContato) 100%);
     }
 
@@ -1100,12 +1357,12 @@ body {
         padding: 30px;
     }
 
-    .projetosAgrupado {
+    .projetos .projetosAgrupado {
         gap: 5px;
         flex-direction: column;
     }
 
-    .cardProjeto {
+    .projetos .projetosAgrupado .cardProjeto {
         width: 300px;
         height: auto;
         justify-content: flex-start;
@@ -1177,24 +1434,24 @@ body {
         background: var(--corLetra);
     }
 
-    /* skills */
+    /* tecnologias */
 
-    .skills {
+    .tecnologias {
         padding: 30px;
 
     }
 
-    .skills .skillTitulo {
+    .tecnologias .skillTitulo {
         font-size: 50px;
     }
 
-    .skills ul {
+    .tecnologias ul {
         gap: 3em;
         flex-wrap: wrap;
 
     }
 
-    .skills ul svg {
+    .tecnologias ul svg {
         width: 50px;
 
     }
@@ -1234,24 +1491,24 @@ body {
         background: var(--corLetra);
     }
 
-    /* skills */
+    /* tecnologias */
 
-    .skills {
-        padding: 20px 0px;
+    .tecnologias {
+        padding: 40px 30px;
 
     }
 
-    .skills .skillTitulo {
+    .tecnologias .skillTitulo {
         font-size: 50px;
     }
 
-    .skills ul {
+    .tecnologias ul {
         gap: 2em;
         flex-wrap: wrap;
 
     }
 
-    .skills ul svg {
+    .tecnologias ul svg {
         width: 50px;
 
     }
@@ -1369,7 +1626,7 @@ body {
 }
 
 
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 380px) {
         body {
             background: linear-gradient(var(--background2)0%, var(--background)3%, var(--background)100%);
         }
@@ -1552,12 +1809,12 @@ body {
         padding: 30px;
     }
 
-    .projetosAgrupado {
+    .projetos .projetosAgrupado {
         gap: 5px;
         flex-direction: column;
     }
 
-    .projetos .projetosAgrupado  .cardProjeto {
+    .projetos .projetosAgrupado .cardProjeto {
         width: 225px;
         height: auto;
         justify-content: flex-start;
@@ -1598,28 +1855,26 @@ body {
         padding: 6px 50px;
     }
 
-/* skills */
+/* tecnologias */
 
-.skills .skillTitulo {
+.tecnologias .skillTitulo {
     margin-bottom: 25px;
     font-size: 40px;
     font-weight: 600;
     color: var(--corLetra);
 }
 
-    .skills {
-        padding: 25px 0px;
-
+    .tecnologias {
+        padding: 50px 25px;
     }
 
 
-    .skills ul {
-        gap: 2em;
+    .tecnologias .skill ul {
+        gap: 1em;
         flex-wrap: wrap;
-
     }
 
-    .skills ul svg {
+    .tecnologias .skill svg {
         width: 40px;
 
     }
@@ -1649,6 +1904,22 @@ body {
 
     /* contato */
 
+    .contato{
+        padding: 20px;
+    }
+
+.contato .contatoAgrupado .redesContato ul{
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.contato .contatoAgrupado .redesContato ul .cardContato{
+    text-align: center;
+}
+
     .contatoH1 {
         font-size: 50px;
     }
@@ -1667,8 +1938,8 @@ body {
 
 
     .contatoAgrupado .cardContato {
-        padding: 5px;
-        width: 270px;
+
+        width: 300px;
         background: linear-gradient(90deg, var(--backgroundLinkContato) 0%, var(--backgroundLinkContato) 100%);
     }
    
@@ -1688,13 +1959,15 @@ body {
         flex-direction: column;
     }
 
-    .cardContato h1 {
-        margin-left: 5px;
+    .contato .contatoAgrupado .cardContato h1 {
+        margin-left: 15px;
+        text-align: center;
         font-size: 14px;
     }
 
-    .cardContato h2 {
+    .contato .contatoAgrupado .cardContato h2 {
         font-size: 14px;
+        text-align: center;
     }
 
 

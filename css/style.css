@@ -617,39 +617,40 @@ header svg {
 
 
 
-/* Skills */
+/* tecnologias */
 
-.skills {
+.tecnologias {
     background: linear-gradient(150deg, var(--linearSkills2), var(--linearSkills1));
     padding: 35px 0px;
     box-shadow: 0 0px 20px 10px var(--sombraButtonTema);
-
+    text-align: center;
+    align-items: center;
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.6s ease, transform 0.6s ease;
 
 }
 
-.skills.active {
+.tecnologias.active {
     opacity: 1;
     transform: translateY(0);
 }
 
-.skills .skillTitulo {
+.tecnologias .skillTitulo {
     margin-bottom: 25px;
     font-size: 70px;
     font-weight: 600;
     color: var(--corLetra);
 }
 
-.skills ul {
+.tecnologias ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5.5em;
 }
 
-.skills ul svg {
+.tecnologias ul svg {
     cursor: pointer;
     width: 90px;
     height: auto;
@@ -659,20 +660,20 @@ header svg {
 
 
 
-.skills ul svg:hover {
+.tecnologias ul svg:hover {
     transform: translateY(-5px);
     filter: drop-shadow(4px 4px 4px var(--sombraButtonTema));
 }
 
-.skills ul svg .insideColor {
+.tecnologias ul svg .insideColor {
     color: var(--corSegundaria);
 }
 
-.skills ul svg .insideColor2 {
+.tecnologias ul svg .insideColor2 {
     color: var(--background);
 }
 
-.skills ul svg .insideColor3 {
+.tecnologias ul svg .insideColor3 {
     color: var(--insideColor3);
 }
 
@@ -711,6 +712,7 @@ header svg {
 
 /* Contato */
 .contato {
+    align-items: center;
     padding: 30px;
     opacity: 0;
     transform: translateY(40px);
@@ -722,7 +724,7 @@ header svg {
     transform: translateY(0);
 }
 
-.contatoAgrupado {
+.contato .contatoAgrupado {
     gap: 5em;
     justify-content: center;
     align-items: center;
