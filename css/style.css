@@ -739,7 +739,7 @@ header svg {
 .comoPenso {
     background-image: url(../img/backpenso.png);
     background-size: cover;
-    background-position: 100%;
+    background-position: 50%;
     background-repeat: no-repeat;
 
     padding: 5em 12em;
