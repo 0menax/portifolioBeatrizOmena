@@ -1,11 +1,11 @@
 body {
     font-family: 'Montserrat', sans-serif;
 
- 
-  
+
+
     background: linear-gradient(var(--background2)0%, var(--background)8%, var(--background)100%);
- 
-    
+
+
 
     /* background-color: var(--background); */
     /* background: linear-gradient(var(--linearSkills2)0%,var(--linearSkills1)30%, var(--linearSkills1)70%, var(--linearSkills2)100%); */
@@ -15,12 +15,12 @@ body {
 * {
     transition: background-color 0.8s ease, color 0.8s ease;
 
-     /* raioX */
+    /* raioX */
     /* outline: 1px solid red  */
 }
 
 html {
-    
+
     scroll-behavior: smooth;
 }
 
@@ -135,7 +135,7 @@ header svg {
 /* Home */
 
 .home {
-   background-image:url(/img/backHome.png);
+    background-image: url(/img/backHome.png);
     background-size: cover;
     background-position: 100%;
     background-repeat: no-repeat;
@@ -279,11 +279,10 @@ header svg {
 /* Projetos */
 
 .projetos {
-        background-image:url(/img/backPenso.png);
-        background-position: 100%;
+    background-image: url(/img/backPenso.png);
+    background-position: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-
     box-sizing: border-box;
     width: 100%;
     padding: 50px;
@@ -484,7 +483,7 @@ header svg {
 
 .modalProjetosConteudo {
 
-    
+
     border: solid 5px var(--bordaModal);
     background: linear-gradient(-40deg,
             var(--backgroundModal1) 0%,
@@ -582,7 +581,7 @@ header svg {
 /* About me */
 
 .aboutMe {
-    background-image:url(/img/backPenso.png);
+    background-image: url(/img/backPenso.png);
     background-position: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -738,16 +737,25 @@ header svg {
 /* Como eu penso */
 
 .comoPenso {
-    background-image:url(/img/backPenso.png);
+    background-image: url(/img/backPenso.png);
     background-size: cover;
     background-position: 100%;
     background-repeat: no-repeat;
-  
+
     padding: 5em 12em;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    transform: translateY(40px);
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
+
+.comoPenso.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 .comoPenso h1 {
     font-size: 70px;
@@ -799,7 +807,7 @@ header svg {
     padding: 20px;
 }
 
-.comoPenso ul li::before{
+.comoPenso ul li::before {
     content: "▸";
     margin-right: 10px;
     color: var(--corLetra);
@@ -862,7 +870,7 @@ header svg {
 
 /* Contato */
 .contato {
-    background-image:url(/img/backPenso.png);
+    background-image: url(/img/backPenso.png);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -888,7 +896,7 @@ header svg {
 
 
 .contatoH1 {
-    
+
     text-align: center;
     padding: 10px;
     color: var(--corLetra);
