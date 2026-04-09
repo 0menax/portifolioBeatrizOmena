@@ -1362,6 +1362,121 @@
         width: 40px;
         height: 40px;
     }
+    /* menu lateral */
+
+    .containerHeader .menu-toggle .botaoSaida {
+        background-color: rgba(0, 0, 0, 0);
+        border-color: rgba(255, 0, 0, 0);
+        width: 50px;
+        height: auto;
+        display: none;
+        margin: 0 80%;
+
+    }
+
+    .containerHeader .menu-toggle .botaoSaida.ativo {
+        display: block;
+    }
+
+
+    .containerHeader .menu-toggle .botaoSaida svg {
+        color: var(--corLetra);
+        width: 40px;
+        height: auto;
+
+    }
+
+    .containerHeader nav {
+        display: none;
+    }
+
+
+    .containerHeader .menu-toggle ul li a {
+        text-decoration: none;
+        color: var(--corLetra);
+    }
+
+    .containerHeader .menu-toggle ul li {
+        margin-bottom: 20px;
+        transition: 0.5s;
+        transform: scale(1);
+    }
+
+    .containerHeader .menu-toggle ul li:hover {
+        transform: scale(1.08);
+
+    }
+
+
+    .button-menu-toggle {
+        display: flex;
+        position: relative;
+        border: none;
+        border-radius: 10px;
+        background-color: var(--corHeader);
+        width: 45px;
+        height: auto;
+    }
+
+
+    .containerHeader .menu-toggle ul li::before {
+        content: "▸";
+        margin-right: 10px;
+        color: var(--corLetra);
+    }
+
+    .containerHeader .menu-toggle {
+        flex-direction: column;
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        border-radius: 0 0 350px 0;
+        width: 250px;
+        height: 350px;
+        backdrop-filter: blur(5px);
+        border-right: solid 10px var(--borderProjetos);
+        background: var(--corFundoCardProjetos);
+
+        color: var(--corLetra);
+        font-size: 23px;
+        font-weight: 500;
+
+        transform: translateX(-100%) translateY(-100%);
+        transition: transform 0.3s ease;
+
+        padding: 50px 30px;
+
+        z-index: 1001;
+    }
+
+    .menu-toggle.ativo {
+        transform: translateX(0) translateY(0);
+        backdrop-filter: blur(10px);
+    }
+
+
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: var(--backOverlay);
+        width: 100%;
+        height: 100vh;
+
+        opacity: 0;
+        visibility: hidden;
+
+        transition: 0.3s;
+        z-index: -1000;
+    }
+
+    .overlay.ativo {
+        opacity: 1;
+        visibility: visible;
+    }
 
     
     /* home */
@@ -1710,60 +1825,7 @@
 }
 
 @media screen and (max-width: 420px) {
-
-
-
-    .projetos .projetosAgrupado .cardProjeto {
-        width: 290px;
-        height: auto;
-        justify-content: flex-start;
-
-    }
-
-    .cardContato {
-        width: 340px;
-    }
-
-    .cardContato svg {
-        width: 30px;
-    }
-
-
-}
-
-
-@media screen and (max-width: 380px) {
-    body {
-        background: linear-gradient(var(--background2)0%, var(--background)3%, var(--background)100%);
-    }
-
-
-    /* header */
-
-
-    .containerHeader {
-        max-width: 300px;
-        padding: 10px 0;
-        justify-content: space-around;
-        gap: 1px;
-    }
-
-    .nome-header {
-        font-size: 20px;
-        text-align: left;
-    }
-
-    header ul {
-        gap: 10px;
-    }
-
-    .btn-tema {
-        width: 30px;
-        height: 30px;
-    }
-
-
-    /* menu lateral */
+/* menu lateral */
 
     .containerHeader .menu-toggle .botaoSaida {
         background-color: rgba(0, 0, 0, 0);
@@ -1878,6 +1940,60 @@
         opacity: 1;
         visibility: visible;
     }
+
+
+    .projetos .projetosAgrupado .cardProjeto {
+        width: 290px;
+        height: auto;
+        justify-content: flex-start;
+
+    }
+
+    .cardContato {
+        width: 340px;
+    }
+
+    .cardContato svg {
+        width: 30px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 380px) {
+    body {
+        background: linear-gradient(var(--background2)0%, var(--background)3%, var(--background)100%);
+    }
+
+
+    /* header */
+
+
+    .containerHeader {
+        max-width: 300px;
+        padding: 10px 0;
+        justify-content: space-around;
+        gap: 1px;
+    }
+
+    .nome-header {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    header ul {
+        gap: 10px;
+    }
+
+    .btn-tema {
+        width: 30px;
+        height: 30px;
+    }
+    
+
+
+    
     /* home */
 
     .home {

@@ -1,4 +1,3 @@
-🚧 Projeto em desenvolvimento – melhorias de responsividade e interações em andamento.
 
 Portfólio profissional desenvolvido com foco em apresentar meus projetos, evolução técnica e organização como desenvolvedora front-end.
 
@@ -7,7 +6,6 @@ Portfólio profissional desenvolvido com foco em apresentar meus projetos, evolu
 - HTML5
 - CSS3
 - JavaScript
-- SCSS
 - SVG
 
 ## 🎯 Objetivo do projeto
